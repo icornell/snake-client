@@ -1,6 +1,12 @@
-const { MOVE_UP_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY, MOVE_LEFT_KEY, MESSAGES } = require("./constants");
+const {
+  MOVE_UP_KEY,
+  MOVE_DOWN_KEY,
+  MOVE_RIGHT_KEY,
+  MOVE_LEFT_KEY,
+  MESSAGES,
+} = require("./constants");
 let connection;
-
+//setup function to connect the key pressed to the movement made by the snake
 const handleUserInput = function (key) {
   if (key === "\u0003") {
     process.exit();
